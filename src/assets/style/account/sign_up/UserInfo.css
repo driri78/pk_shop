@@ -1,0 +1,18 @@
+.gender_box {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gender_box select {
+  width: 28%;
+  height: 100%;
+  padding: 0 20px;
+
+  font-size: 18px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+.gender_box .Register_item {
+  width: 68%;
+}

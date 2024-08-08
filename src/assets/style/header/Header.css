@@ -1,0 +1,78 @@
+header {
+  width: 100%;
+  padding-top: 30px;
+  background-color: white;
+  text-align: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.product_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.product_search_box {
+  width: 380px;
+  height: 40px;
+  display: flex;
+  border-bottom: 2px solid black;
+}
+.product_input_box {
+  position: relative;
+  width: 90%;
+  height: 100%;
+}
+.product_input_box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+
+  font-size: 24px;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.product_input_box label {
+  opacity: 0.3;
+
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+
+  background-color: transparent;
+
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+  cursor: pointer;
+}
+.product_input_box img {
+  height: 30px;
+}
+.product_btn_box {
+  width: 10%;
+}
+.product_btn_box button {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+.product_btn_box button svg {
+  width: 50%;
+  height: 50%;
+  transition: 1s;
+}
+.Logo_img {
+  cursor: pointer;
+}

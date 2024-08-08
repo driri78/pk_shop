@@ -1,0 +1,49 @@
+.Review_box {
+  padding: 30px;
+}
+.Review_item {
+  margin-bottom: 60px;
+}
+.Review_item .user_info {
+  display: flex;
+  gap: 12px;
+}
+.user_info .section01,
+.user_info .section02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.user_info .section01 .icon {
+  border: 1px solid #ddd;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  background-size: cover;
+}
+
+.Review_item .comment {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #eee;
+  background-color: #eee;
+  border-radius: 12px;
+
+  position: relative;
+  top: 24px;
+}
+.comment:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-bottom-color: #eee;
+  border-top: 0;
+  margin-left: -12px;
+  margin-top: -12px;
+}

@@ -1,0 +1,85 @@
+.dollDetail_container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.dollDetail_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dollDetail_box .img_box,
+.dollDetail_box .info_box {
+  width: 40%;
+}
+.img_box .sub_box,
+.img_box .main {
+  aspect-ratio: 1;
+  display: inline-block;
+  background-size: cover;
+}
+.img_box .sub_box {
+  width: 20%;
+  height: 100%;
+}
+.sub_box .sub {
+  width: 100%;
+  aspect-ratio: 1;
+
+  background-size: cover;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.img_box .main {
+  width: 80%;
+  border: none;
+}
+
+.dollDetail_box .info_box > div {
+  margin: 30px 0;
+}
+.dollDetail_box .info_box > div:first-of-type {
+  margin-top: 0;
+}
+
+.dollDetail_box .info_box > div:last-of-type {
+  margin-bottom: 0;
+}
+.info_box .name {
+  font-size: 26px;
+  font-weight: bold;
+}
+.info_box .price {
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+}
+.dollDetail_box .dollDetail_btn {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.dollDetail_btn button {
+  width: 49%;
+  height: 60px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.dollDetail_btn .buy {
+  color: white;
+  background-color: #ec0000;
+}
+.dollDetail_btn .basket {
+  color: #ec0000;
+  background-color: #fff;
+  border: 1px solid #ec0000;
+}

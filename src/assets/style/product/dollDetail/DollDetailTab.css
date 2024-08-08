@@ -1,0 +1,25 @@
+.dollDetail_tab_box .tab_btn {
+  margin-top: 100px;
+  display: flex;
+}
+.dollDetail_tab_box .tab_btn button {
+  width: 50%;
+  height: 70px;
+  background-color: #ddd;
+
+  color: #aaa;
+  font-size: 24px;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+.dollDetail_tab_box .tab_btn button:first-of-type {
+  color: #fff;
+  background-color: #ec0000;
+}
+.dollDetail_tab_box .tab_content .description {
+  padding: 60px;
+  padding-bottom: 30px;
+}

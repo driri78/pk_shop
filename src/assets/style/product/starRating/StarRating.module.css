@@ -1,0 +1,6 @@
+.star_box {
+  display: flex;
+}
+.star_box img svg {
+  fill: white;
+}

@@ -1,0 +1,6 @@
+.Account_item input {
+  border: 1px solid #ddd;
+
+  outline: none;
+  cursor: pointer;
+}

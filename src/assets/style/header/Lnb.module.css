@@ -1,0 +1,17 @@
+.lnb {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.lnb li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  cursor: pointer;
+}
+.lnb svg {
+  width: 38px;
+  height: 38px;
+}

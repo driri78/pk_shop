@@ -1,0 +1,31 @@
+.paging_box {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  color: #444;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paging_box ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.paging_box ul li a {
+  display: block;
+  padding: 0 10px;
+}
+.paging_box .prev,
+.paging_box .next {
+  width: 30px;
+  height: 50%;
+}
+.paging_box .prev svg,
+.paging_box .next svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

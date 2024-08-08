@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "홍*동",
+    "starRating": 5,
+    "date": "2025-08-01",
+    "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, corporis, pariatur nisi fugit nihil ut quam deserunt quos adipisci dolorum ullam voluptas! Ab minus consequatur vel dolorem aliquid error dolorum?"
+  },
+  {
+    "id": 2,
+    "name": "김*완",
+    "starRating": 5,
+    "date": "2025-07-05",
+    "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, corporis, pariatur nisi fugit nihil ut quam deserunt quos adipisci dolorum ullam voluptas! Ab minus consequatur vel dolorem aliquid error dolorum?"
+  },
+  {
+    "id": 3,
+    "name": "강*식",
+    "starRating": 4,
+    "date": "2025-06-05",
+    "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, corporis, pariatur nisi fugit nihil ut quam deserunt quos adipisci dolorum ullam voluptas! Ab minus consequatur vel dolorem aliquid error dolorum?"
+  },
+  {
+    "id": 4,
+    "name": "김*희",
+    "starRating": 5,
+    "date": "2025-01-05",
+    "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, corporis, pariatur nisi fugit nihil ut quam deserunt quos adipisci dolorum ullam voluptas! Ab minus consequatur vel dolorem aliquid error dolorum?"
+  },
+  {
+    "id": 5,
+    "name": "오*원",
+    "starRating": 2,
+    "date": "2024-08-05",
+    "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, corporis, pariatur nisi fugit nihil ut quam deserunt quos adipisci dolorum ullam voluptas! Ab minus consequatur vel dolorem aliquid error dolorum?"
+  },
+  {
+    "id": 6,
+    "name": "고*동",
+    "starRating": 4,
+    "date": "2025-02-05",
+    "comment": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, corporis, pariatur nisi fugit nihil ut quam deserunt quos adipisci dolorum ullam voluptas! Ab minus consequatur vel dolorem aliquid error dolorum?"
+  }
+]

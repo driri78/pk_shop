@@ -1,0 +1,21 @@
+.subMenu_container {
+  width: 100%;
+  margin: 40px auto;
+}
+.subMenu_box {
+  display: flex;
+  justify-content: center;
+}
+.subMenu_box li a {
+  font-size: 16px;
+  padding: 0 50px;
+  color: #999;
+  border-right: 1px solid #999;
+}
+.subMenu_box li a:hover {
+  color: #444;
+  font-weight: bold;
+}
+.subMenu_box li:last-of-type a {
+  border: none;
+}
