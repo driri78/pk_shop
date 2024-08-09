@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useAll } from "../../../contexts/AllContext";
+import { Link, useNavigate } from "react-router-dom";
 
 const SubMenuItem = ({ subMenu }) => {
-  const { dispatch } = useAll();
+  const navigate = useNavigate();
   return (
     <li>
       <Link
         onClick={(e) => {
           e.preventDefault();
-          dispatch({ type: "basic", payload: subMenu.path });
+          navigate(subMenu.path);
         }}
       >
         {subMenu.name}

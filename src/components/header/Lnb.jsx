@@ -1,18 +1,17 @@
 import React from "react";
 import style from "../../assets/style/header/Lnb.module.css";
 import { PiBasketFill } from "react-icons/pi";
-import { Link } from "react-router-dom";
-import { useAll } from "../../contexts/AllContext";
+import { Link, useNavigate } from "react-router-dom";
 
 const Lnb = () => {
-  const { dispatch } = useAll();
+  const navigate = useNavigate();
   return (
     <ul className={style.lnb}>
       <li title="포켓몬 도감">
         <Link
           onClick={(e) => {
             e.preventDefault();
-            dispatch({ type: "basic", payload: "/wiki" });
+            navigate("/wiki");
           }}
         >
           <img
@@ -26,7 +25,7 @@ const Lnb = () => {
         <Link
           onClick={(e) => {
             e.preventDefault();
-            dispatch({ type: "basic", payload: "/account/sign_in" });
+            navigate("/account/sign_in");
           }}
         >
           <img
@@ -40,7 +39,7 @@ const Lnb = () => {
         <Link
           onClick={(e) => {
             e.preventDefault();
-            dispatch({ type: "basic", payload: "/product/basket" });
+            navigate("/product/basket");
           }}
         >
           <PiBasketFill />

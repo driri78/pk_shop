@@ -1,21 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import SearchBtn from "./SearchBtn";
-import { useAll } from "../../../contexts/AllContext";
+import { useNavigate } from "react-router-dom";
+import { createURL } from "../../../creatURL/createURL";
 
 const Search = () => {
-  const { dispatch } = useAll();
   const [focus, setFocus] = useState(false);
   const [searchVal, setSearchVal] = useState("");
   const inputRef = useRef();
-
+  const navigate = useNavigate();
   return (
     <form
       className="product_search_box"
       onSubmit={(e) => {
         e.preventDefault();
         if (searchVal.length) {
-          dispatch({ type: "search", payload: searchVal });
+          navigate(createURL(searchVal, 0, 0));
         } else {
           alert("검색어를 입력하세요");
           inputRef.current.focus();

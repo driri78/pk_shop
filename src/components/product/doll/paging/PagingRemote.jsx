@@ -1,14 +1,13 @@
-import React, { Fragment, useEffect, useRef, useState } from "react";
+import React, { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import style from "../../../../assets/style/product/doll/Paging.module.css";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { useProduct } from "../../../../contexts/ProductContext";
-import { useAll } from "../../../../contexts/AllContext";
+import { createURL } from "../../../../creatURL/createURL";
 
 const PagingRemote = ({ children, pageJson }) => {
   const { searchParams } = useProduct();
-  const { dispatch } = useAll();
-
+  const navigate = useNavigate();
   return (
     <Fragment>
       {
@@ -16,10 +15,13 @@ const PagingRemote = ({ children, pageJson }) => {
           {searchParams.get("nowBlock") > 0 && (
             <GrFormPrevious
               onClick={() => {
-                dispatch({
-                  type: "pageRemote",
-                  payload: +searchParams.get("nowBlock") - 1,
-                });
+                navigate(
+                  createURL(
+                    undefined,
+                    undefined,
+                    +searchParams.get("nowBlock") - 1
+                  )
+                );
               }}
             />
           )}
@@ -32,10 +34,13 @@ const PagingRemote = ({ children, pageJson }) => {
             pageJson.lastPage / pageJson.blockPerPage && (
             <GrFormNext
               onClick={() => {
-                dispatch({
-                  type: "pageRemote",
-                  payload: +searchParams.get("nowBlock") + 1,
-                });
+                navigate(
+                  createURL(
+                    undefined,
+                    undefined,
+                    +searchParams.get("nowBlock") + 1
+                  )
+                );
               }}
             />
           )}

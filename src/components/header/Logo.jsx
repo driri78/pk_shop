@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useAll } from "../../contexts/AllContext";
+import { Link, useNavigate } from "react-router-dom";
 
 const Logo = () => {
-  const { dispatch } = useAll();
+  const navigate = useNavigate();
   return (
     <div className="Logo_img" title="홈">
       <Link
         onClick={(e) => {
           e.preventDefault();
-          dispatch({ type: "basic", payload: "/" });
+          navigate("/");
         }}
       >
         <img

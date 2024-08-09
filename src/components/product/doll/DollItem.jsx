@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import DollHeart from "./DollHeart";
 import StarRating from "../starRating/StarRating";
-import { useAll } from "../../../contexts/AllContext";
+import { useNavigate } from "react-router-dom";
 
 const DollItem = ({ product }) => {
   const { productName, pokemonName, productPrice, productSize, productCount } =
     product;
-  const { dispatch } = useAll();
   const [hover, setHover] = useState(true);
+  const navigate = useNavigate();
   return (
     <div className="doll_item">
       <DollHeart product={product} />
       <div
         className="content"
-        onClick={() =>
-          dispatch({ type: "basic", payload: `/product/doll/${pokemonName}` })
-        }
+        onClick={() => navigate(`/product/doll/${pokemonName}`)}
       >
         <div
           onMouseOver={() => {

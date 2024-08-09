@@ -1,9 +1,10 @@
 import React from "react";
 import { useProduct } from "../../../../contexts/ProductContext";
-import { useAll } from "../../../../contexts/AllContext";
+import { useNavigate } from "react-router-dom";
+import { createURL } from "../../../../creatURL/createURL";
 const DollMenu = () => {
   const { products, searchParams } = useProduct();
-  const { dispatch } = useAll();
+  const navigate = useNavigate();
   return (
     <div className="doll_menu">
       <div>{`총 ${products.length}개의 상품`}</div>
@@ -14,7 +15,9 @@ const DollMenu = () => {
               ? { fontWeight: 700, color: "#444" }
               : { fontWeight: 400, color: "#aaa" }
           }
-          onClick={() => dispatch({ type: "order", payload: "desc" })}
+          onClick={() =>
+            navigate(createURL(undefined, undefined, undefined, "desc"))
+          }
         >
           낮은가격순
         </li>
@@ -24,7 +27,9 @@ const DollMenu = () => {
               ? { fontWeight: 700, color: "#444" }
               : { fontWeight: 400, color: "#aaa" }
           }
-          onClick={() => dispatch({ type: "order", payload: "asc" })}
+          onClick={() =>
+            navigate(createURL(undefined, undefined, undefined, "asc"))
+          }
         >
           높은가격순
         </li>

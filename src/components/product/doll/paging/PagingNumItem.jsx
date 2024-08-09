@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useAll } from "../../../../contexts/AllContext";
+import { Link, useNavigate } from "react-router-dom";
 import { useProduct } from "../../../../contexts/ProductContext";
+import { createURL } from "../../../../creatURL/createURL";
 
 const PagingNumItem = ({ num }) => {
-  const { dispatch } = useAll();
   const { searchParams } = useProduct();
+  const navigate = useNavigate();
 
   return (
     <Link
@@ -20,7 +20,7 @@ const PagingNumItem = ({ num }) => {
           console.log("같음");
           return;
         }
-        dispatch({ type: "pageNum", payload: num });
+        navigate(createURL(undefined, num));
       }}
     >
       {num + 1}

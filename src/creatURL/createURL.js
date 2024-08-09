@@ -14,31 +14,29 @@ function createURL(search, page, block, order) {
     }
   }
 
-  if (window.location.pathname === "/product/doll") {
-    if (page !== undefined) {
-      urlObj.nowPage = `&nowPage=${page}`;
+  if (page !== undefined) {
+    urlObj.nowPage = `&nowPage=${page}`;
+  } else {
+    if (searchParams.get("nowPage")) {
+      urlObj.nowPage = `&nowPage=${searchParams.get("nowPage")}`;
     } else {
-      if (searchParams.get("nowPage")) {
-        urlObj.nowPage = `&nowPage=${searchParams.get("nowPage")}`;
-      } else {
-        urlObj.nowPage = `&nowPage=0`;
-      }
+      urlObj.nowPage = `&nowPage=0`;
     }
-    if (block !== undefined) {
-      urlObj.nowBlock = `&nowBlock=${block}`;
+  }
+  if (block !== undefined) {
+    urlObj.nowBlock = `&nowBlock=${block}`;
+  } else {
+    if (searchParams.get("nowBlock")) {
+      urlObj.nowBlock = `&nowBlock=${searchParams.get("nowBlock")}`;
     } else {
-      if (searchParams.get("nowBlock")) {
-        urlObj.nowBlock = `&nowBlock=${searchParams.get("nowBlock")}`;
-      } else {
-        urlObj.nowBlock = `&nowBlock=0`;
-      }
+      urlObj.nowBlock = `&nowBlock=0`;
     }
-    if (order !== undefined) {
-      urlObj.nowOrder = `&order=${order}`;
-    } else {
-      if (searchParams.get("order")) {
-        urlObj.nowOrder = `&order=${searchParams.get("order")}`;
-      }
+  }
+  if (order !== undefined) {
+    urlObj.nowOrder = `&order=${order}`;
+  } else {
+    if (searchParams.get("order")) {
+      urlObj.nowOrder = `&order=${searchParams.get("order")}`;
     }
   }
 
