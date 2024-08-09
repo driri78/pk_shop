@@ -13,7 +13,7 @@ const DollMenu = () => {
           style={
             searchParams.get("order") === "desc"
               ? { fontWeight: 700, color: "#444" }
-              : { fontWeight: 400, color: "#aaa" }
+              : {}
           }
           onClick={() =>
             navigate(createURL(undefined, undefined, undefined, "desc"))
@@ -25,7 +25,7 @@ const DollMenu = () => {
           style={
             searchParams.get("order") === "asc"
               ? { fontWeight: 700, color: "#444" }
-              : { fontWeight: 400, color: "#aaa" }
+              : {}
           }
           onClick={() =>
             navigate(createURL(undefined, undefined, undefined, "asc"))
