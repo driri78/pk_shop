@@ -31,7 +31,6 @@ const viewItem = (products, pageJson) => {
     let index = pageJson.pagePerProduct * searchParams.get("nowPage") + i;
     arr.push(products[index]);
   }
-  console.log(arr);
   return arr;
 };
 

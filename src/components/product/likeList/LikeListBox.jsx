@@ -42,15 +42,13 @@ const LikeListBox = () => {
           ))}
         </tbody>
       </table>
-      <Paging
-        pageJson={
-          isList
-            ? likeListPageJson(
-                JSON.parse(window.localStorage.getItem("LikeList"))
-              )
-            : []
-        }
-      />
+      {isList && (
+        <Paging
+          pageJson={likeListPageJson(
+            JSON.parse(window.localStorage.getItem("LikeList"))
+          )}
+        />
+      )}
       <div>
         <button>선택 상품 삭제</button>
       </div>
