@@ -4,6 +4,7 @@ import {
   Doll,
   DollDetail,
   Home,
+  LikeList,
   Login,
   Register,
   SearchId,
@@ -29,6 +30,7 @@ function App() {
             <Route path="search_pw" element={<SearchPw />} />
           </Route>
           <Route path="/product">
+            <Route path="heart" element={<LikeList />} />
             <Route path="doll">
               <Route index element={<Doll />} />
               <Route path=":pokemonName" element={<DollDetail />} />

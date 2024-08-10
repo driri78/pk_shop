@@ -1,7 +1,7 @@
 [
   {
     "productId": 1,
-    "productName": "이븐곰",
+    "productName": "이븐곰 인형",
     "pokemonName": "bewear",
     "productPrice": 13000,
     "productSize": "L",
@@ -9,7 +9,7 @@
   },
   {
     "productId": 2,
-    "productName": "거북왕",
+    "productName": "거북왕 인형",
     "pokemonName": "blastoise",
     "productPrice": 33000,
     "productSize": "XL",
@@ -17,7 +17,7 @@
   },
   {
     "productId": 3,
-    "productName": "파르토",
+    "productName": "파르토 인형",
     "pokemonName": "bunnelby",
     "productPrice": 13000,
     "productSize": "L",
@@ -25,7 +25,7 @@
   },
   {
     "productId": 4,
-    "productName": "카르본",
+    "productName": "카르본 인형",
     "pokemonName": "charcadet",
     "productPrice": 13000,
     "productSize": "L",
@@ -33,7 +33,7 @@
   },
   {
     "productId": 5,
-    "productName": "리자몽",
+    "productName": "리자몽 인형",
     "pokemonName": "charizard",
     "productPrice": 33000,
     "productSize": "XL",
@@ -41,7 +41,7 @@
   },
   {
     "productId": 6,
-    "productName": "도치마론",
+    "productName": "도치마론 인형",
     "pokemonName": "chespin",
     "productPrice": 12000,
     "productSize": "S",
@@ -49,7 +49,7 @@
   },
   {
     "productId": 7,
-    "productName": "케오퍼스",
+    "productName": "케오퍼스 인형",
     "pokemonName": "clobbopus",
     "productPrice": 17000,
     "productSize": "L",
@@ -57,7 +57,7 @@
   },
   {
     "productId": 8,
-    "productName": "아머까오",
+    "productName": "아머까오 인형",
     "pokemonName": "corviknight",
     "productPrice": 14000,
     "productSize": "L",
@@ -65,7 +65,7 @@
   },
   {
     "productId": 9,
-    "productName": "엘풍",
+    "productName": "엘풍 인형",
     "pokemonName": "cottonee",
     "productPrice": 21000,
     "productSize": "L",
@@ -73,7 +73,7 @@
   },
   {
     "productId": 10,
-    "productName": "자루도",
+    "productName": "자루도 인형",
     "pokemonName": "zarude",
     "productPrice": 43000,
     "productSize": "L",
@@ -81,7 +81,7 @@
   },
   {
     "productId": 11,
-    "productName": "데덴네",
+    "productName": "데덴네 인형",
     "pokemonName": "dedenne",
     "productPrice": 32000,
     "productSize": "L",
@@ -89,7 +89,7 @@
   },
   {
     "productId": 12,
-    "productName": "대검귀",
+    "productName": "대검귀 인형",
     "pokemonName": "dewott",
     "productPrice": 44000,
     "productSize": "L",
@@ -97,7 +97,7 @@
   },
   {
     "productId": 13,
-    "productName": "디안시",
+    "productName": "디안시 인형",
     "pokemonName": "diancie",
     "productPrice": 51000,
     "productSize": "L",
@@ -105,7 +105,7 @@
   },
   {
     "productId": 14,
-    "productName": "드래펄트",
+    "productName": "드래펄트 인형",
     "pokemonName": "dreepy",
     "productPrice": 32000,
     "productSize": "L",
@@ -113,7 +113,7 @@
   },
   {
     "productId": 15,
-    "productName": "몰드류",
+    "productName": "몰드류 인형",
     "pokemonName": "drilbur",
     "productPrice": 19000,
     "productSize": "L",
@@ -121,7 +121,7 @@
   },
   {
     "productId": 16,
-    "productName": "스완나",
+    "productName": "스완나 인형",
     "pokemonName": "ducklett",
     "productPrice": 16000,
     "productSize": "L",
@@ -129,7 +129,7 @@
   },
   {
     "productId": 17,
-    "productName": "두랄루돈",
+    "productName": "두랄루돈 인형",
     "pokemonName": "duraludon",
     "productPrice": 15000,
     "productSize": "XL",
@@ -137,7 +137,7 @@
   },
   {
     "productId": 18,
-    "productName": "푸호꼬",
+    "productName": "푸호꼬 인형",
     "pokemonName": "fennekin",
     "productPrice": 21000,
     "productSize": "L",
@@ -145,7 +145,7 @@
   },
   {
     "productId": 19,
-    "productName": "부스터",
+    "productName": "부스터 인형",
     "pokemonName": "flareon",
     "productPrice": 44000,
     "productSize": "S",
@@ -153,7 +153,7 @@
   },
   {
     "productId": 20,
-    "productName": "화살꼬빈",
+    "productName": "화살꼬빈 인형",
     "pokemonName": "fletchling",
     "productPrice": 23000,
     "productSize": "S",
@@ -161,7 +161,7 @@
   },
   {
     "productId": 21,
-    "productName": "뜨아거",
+    "productName": "뜨아거 인형",
     "pokemonName": "fuecoco",
     "productPrice": 44000,
     "productSize": "M",
@@ -169,7 +169,7 @@
   },
   {
     "productId": 22,
-    "productName": "게노세크트",
+    "productName": "게노세크트 인형",
     "pokemonName": "genesect",
     "productPrice": 32000,
     "productSize": "L",
@@ -177,7 +177,7 @@
   },
   {
     "productId": 23,
-    "productName": "팬텀",
+    "productName": "팬텀 인형",
     "pokemonName": "gengar",
     "productPrice": 44000,
     "productSize": "M",
@@ -185,7 +185,7 @@
   },
   {
     "productId": 24,
-    "productName": "블리자포스",
+    "productName": "블리자포스 인형",
     "pokemonName": "glastrier",
     "productPrice": 21000,
     "productSize": "XL",
@@ -193,7 +193,7 @@
   },
   {
     "productId": 25,
-    "productName": "고디모아젤",
+    "productName": "고디모아젤 인형",
     "pokemonName": "gothita",
     "productPrice": 11000,
     "productSize": "XL",
@@ -201,7 +201,7 @@
   },
   {
     "productId": 26,
-    "productName": "태깅구르",
+    "productName": "태깅구르 인형",
     "pokemonName": "grafaiai",
     "productPrice": 44000,
     "productSize": "XL",
@@ -209,7 +209,7 @@
   },
   {
     "productId": 27,
-    "productName": "흥나숭",
+    "productName": "흥나숭 인형",
     "pokemonName": "grookey",
     "productPrice": 13000,
     "productSize": "M",
@@ -217,7 +217,7 @@
   },
   {
     "productId": 28,
-    "productName": "오롱털",
+    "productName": "오롱털 인형",
     "pokemonName": "impidimp",
     "productPrice": 17000,
     "productSize": "S",
@@ -225,7 +225,7 @@
   },
   {
     "productId": 29,
-    "productName": "푸린",
+    "productName": "푸린 인형",
     "pokemonName": "jigglypuff",
     "productPrice": 44000,
     "productSize": "S",
@@ -233,7 +233,7 @@
   },
   {
     "productId": 30,
-    "productName": "지라치",
+    "productName": "지라치 인형",
     "pokemonName": "jirachi",
     "productPrice": 44000,
     "productSize": "S",
@@ -241,7 +241,7 @@
   },
   {
     "productId": 31,
-    "productName": "케르디오(각오의 모습)",
+    "productName": "케르디오(각오의 모습) 인형",
     "pokemonName": "keldeo-resolute",
     "productPrice": 44000,
     "productSize": "L",
@@ -249,7 +249,7 @@
   },
   {
     "productId": 32,
-    "productName": "라프라스",
+    "productName": "라프라스 인형",
     "pokemonName": "lapras",
     "productPrice": 44000,
     "productSize": "XL",
@@ -257,7 +257,7 @@
   },
   {
     "productId": 33,
-    "productName": "냐오불",
+    "productName": "냐오불 인형",
     "pokemonName": "litten",
     "productPrice": 44000,
     "productSize": "M",
@@ -265,7 +265,7 @@
   },
   {
     "productId": 34,
-    "productName": "로파파",
+    "productName": "로파파 인형",
     "pokemonName": "lotad",
     "productPrice": 11000,
     "productSize": "XL",
@@ -273,7 +273,7 @@
   },
   {
     "productId": 35,
-    "productName": "루가루암(황혼의 모습)",
+    "productName": "루가루암(황혼의 모습) 인형",
     "pokemonName": "lycanroc-dusk",
     "productPrice": 34000,
     "productSize": "L",
@@ -281,7 +281,7 @@
   },
   {
     "productId": 36,
-    "productName": "루가루암(한낮의 모습)",
+    "productName": "루가루암(한낮의 모습) 인형",
     "pokemonName": "lycanroc-midday",
     "productPrice": 34000,
     "productSize": "L",
@@ -289,7 +289,7 @@
   },
   {
     "productId": 37,
-    "productName": "마나피",
+    "productName": "마나피 인형",
     "pokemonName": "manaphy",
     "productPrice": 11000,
     "productSize": "XL",
@@ -297,7 +297,7 @@
   },
   {
     "productId": 38,
-    "productName": "메로엣타(보이스폼)",
+    "productName": "메로엣타(보이스폼) 인형",
     "pokemonName": "meloetta-aria",
     "productPrice": 42000,
     "productSize": "L",
@@ -305,7 +305,7 @@
   },
   {
     "productId": 39,
-    "productName": "메로엣타(스텝폼)",
+    "productName": "메로엣타(스텝폼) 인형",
     "pokemonName": "meloetta-pirouette",
     "productPrice": 42000,
     "productSize": "L",
@@ -313,7 +313,7 @@
   },
   {
     "productId": 40,
-    "productName": "냐오닉스(암)",
+    "productName": "냐오닉스(암) 인형",
     "pokemonName": "meowstic-female",
     "productPrice": 31000,
     "productSize": "S",
@@ -321,7 +321,7 @@
   },
   {
     "productId": 41,
-    "productName": "냐오닉스(수)",
+    "productName": "냐오닉스(수) 인형",
     "pokemonName": "meowstic-male",
     "productPrice": 31000,
     "productSize": "S",
@@ -329,7 +329,7 @@
   },
   {
     "productId": 42,
-    "productName": "비조도",
+    "productName": "비조도 인형",
     "pokemonName": "mienfoo",
     "productPrice": 11000,
     "productSize": "L",
@@ -337,7 +337,7 @@
   },
   {
     "productId": 43,
-    "productName": "따라큐",
+    "productName": "따라큐 인형",
     "pokemonName": "mimikyu",
     "productPrice": 11000,
     "productSize": "L",
@@ -345,7 +345,7 @@
   },
   {
     "productId": 44,
-    "productName": "춤추새(이글이글스타일)",
+    "productName": "춤추새(이글이글스타일) 인형",
     "pokemonName": "oricorio-baile",
     "productPrice": 21000,
     "productSize": "L",
@@ -353,7 +353,7 @@
   },
   {
     "productId": 45,
-    "productName": "춤추새(훌라훌라스타일)",
+    "productName": "춤추새(훌라훌라스타일) 인형",
     "pokemonName": "oricorio-pau",
     "productPrice": 21000,
     "productSize": "L",
@@ -361,7 +361,7 @@
   },
   {
     "productId": 46,
-    "productName": "춤추새(파칙파칙스타일)",
+    "productName": "춤추새(파칙파칙스타일) 인형",
     "pokemonName": "oricorio-pom-pom",
     "productPrice": 21000,
     "productSize": "L",
@@ -369,7 +369,7 @@
   },
   {
     "productId": 47,
-    "productName": "춤추새(하늘하늘스타일)",
+    "productName": "춤추새(하늘하늘스타일) 인형",
     "pokemonName": "oricorio-sensu",
     "productPrice": 21000,
     "productSize": "L",
@@ -377,7 +377,7 @@
   },
   {
     "productId": 48,
-    "productName": "돌핀맨(마이티폼)",
+    "productName": "돌핀맨(마이티폼) 인형",
     "pokemonName": "palafin-hero",
     "productPrice": 21000,
     "productSize": "L",
@@ -385,7 +385,7 @@
   },
   {
     "productId": 49,
-    "productName": "판짱",
+    "productName": "판짱 인형",
     "pokemonName": "pancham",
     "productPrice": 27000,
     "productSize": "XL",
@@ -393,7 +393,7 @@
   },
   {
     "productId": 50,
-    "productName": "찌르성게",
+    "productName": "찌르성게 인형",
     "pokemonName": "pincurchin",
     "productPrice": 21000,
     "productSize": "XL",
@@ -401,7 +401,7 @@
   },
   {
     "productId": 51,
-    "productName": "슈륙챙이",
+    "productName": "슈륙챙이 인형",
     "pokemonName": "poliwhirl",
     "productPrice": 44000,
     "productSize": "M",
@@ -409,7 +409,7 @@
   },
   {
     "productId": 52,
-    "productName": "누리레느",
+    "productName": "누리레느 인형",
     "pokemonName": "popplio",
     "productPrice": 27000,
     "productSize": "L",
@@ -417,7 +417,7 @@
   },
   {
     "productId": 53,
-    "productName": "고라파덕",
+    "productName": "고라파덕 인형",
     "pokemonName": "psyduck",
     "productPrice": 44000,
     "productSize": "S",
@@ -425,7 +425,7 @@
   },
   {
     "productId": 54,
-    "productName": "꾸왁스",
+    "productName": "꾸왁스 인형",
     "pokemonName": "quaxly",
     "productPrice": 27000,
     "productSize": "L",
@@ -433,7 +433,7 @@
   },
   {
     "productId": 55,
-    "productName": "레지아이스",
+    "productName": "레지아이스 인형",
     "pokemonName": "regice",
     "productPrice": 36000,
     "productSize": "L",
@@ -441,7 +441,7 @@
   },
   {
     "productId": 56,
-    "productName": "레지드래고",
+    "productName": "레지드래고 인형",
     "pokemonName": "regidrago",
     "productPrice": 36000,
     "productSize": "L",
@@ -449,7 +449,7 @@
   },
   {
     "productId": 57,
-    "productName": "레지에레키",
+    "productName": "레지에레키 인형",
     "pokemonName": "regieleki",
     "productPrice": 36000,
     "productSize": "L",
@@ -457,7 +457,7 @@
   },
   {
     "productId": 58,
-    "productName": "레지락",
+    "productName": "레지락 인형",
     "pokemonName": "regirock",
     "productPrice": 36000,
     "productSize": "L",
@@ -465,7 +465,7 @@
   },
   {
     "productId": 59,
-    "productName": "레지스틸",
+    "productName": "레지스틸 인형",
     "pokemonName": "registeel",
     "productPrice": 36000,
     "productSize": "L",
@@ -473,7 +473,7 @@
   },
   {
     "productId": 60,
-    "productName": "나몰빼미",
+    "productName": "나몰빼미 인형",
     "pokemonName": "rowlet",
     "productPrice": 44000,
     "productSize": "S",
@@ -481,7 +481,7 @@
   },
   {
     "productId": 61,
-    "productName": "타격귀",
+    "productName": "타격귀 인형",
     "pokemonName": "sawk",
     "productPrice": 12000,
     "productSize": "L",
@@ -489,7 +489,7 @@
   },
   {
     "productId": 62,
-    "productName": "펜드라",
+    "productName": "펜드라 인형",
     "pokemonName": "scolipede",
     "productPrice": 14000,
     "productSize": "L",
@@ -497,7 +497,7 @@
   },
   {
     "productId": 63,
-    "productName": "염버니",
+    "productName": "염버니 인형",
     "pokemonName": "scorbunny",
     "productPrice": 44000,
     "productSize": "S",
@@ -505,7 +505,7 @@
   },
   {
     "productId": 64,
-    "productName": "잠만보",
+    "productName": "잠만보 인형",
     "pokemonName": "snorlax",
     "productPrice": 44000,
     "productSize": "XL",
@@ -513,7 +513,7 @@
   },
   {
     "productId": 65,
-    "productName": "울머기",
+    "productName": "울머기 인형",
     "pokemonName": "sobble",
     "productPrice": 44000,
     "productSize": "S",
@@ -521,7 +521,7 @@
   },
   {
     "productId": 66,
-    "productName": "레이스포스",
+    "productName": "레이스포스 인형",
     "pokemonName": "spectrier",
     "productPrice": 21000,
     "productSize": "L",
@@ -529,7 +529,7 @@
   },
   {
     "productId": 67,
-    "productName": "나오하",
+    "productName": "나오하 인형",
     "pokemonName": "sprigatito",
     "productPrice": 44000,
     "productSize": "S",
@@ -537,7 +537,7 @@
   },
   {
     "productId": 68,
-    "productName": "꼬부기",
+    "productName": "꼬부기 인형",
     "pokemonName": "squirtle",
     "productPrice": 44000,
     "productSize": "S",
@@ -545,7 +545,7 @@
   },
   {
     "productId": 69,
-    "productName": "나룸퍼프",
+    "productName": "나룸퍼프 인형",
     "pokemonName": "swirlix",
     "productPrice": 13000,
     "productSize": "XL",
@@ -553,7 +553,7 @@
   },
   {
     "productId": 70,
-    "productName": "테라키온",
+    "productName": "테라키온 인형",
     "pokemonName": "terrakion",
     "productPrice": 16000,
     "productSize": "XL",
@@ -561,7 +561,7 @@
   },
   {
     "productId": 71,
-    "productName": "던지미",
+    "productName": "던지미 인형",
     "pokemonName": "throh",
     "productPrice": 15000,
     "productSize": "XL",
@@ -569,7 +569,7 @@
   },
   {
     "productId": 72,
-    "productName": "으랏차",
+    "productName": "으랏차 인형",
     "pokemonName": "timburr",
     "productPrice": 15000,
     "productSize": "S",
@@ -577,7 +577,7 @@
   },
   {
     "productId": 73,
-    "productName": "리아코",
+    "productName": "리아코 인형",
     "pokemonName": "totodile",
     "productPrice": 44000,
     "productSize": "S",
@@ -585,7 +585,7 @@
   },
   {
     "productId": 74,
-    "productName": "나무지기",
+    "productName": "나무지기 인형",
     "pokemonName": "treecko",
     "productPrice": 44000,
     "productSize": "S",
@@ -593,7 +593,7 @@
   },
   {
     "productId": 75,
-    "productName": "동챙이",
+    "productName": "동챙이 인형",
     "pokemonName": "tympole",
     "productPrice": 33000,
     "productSize": "S",
@@ -601,7 +601,7 @@
   },
   {
     "productId": 76,
-    "productName": "이상해꽃",
+    "productName": "이상해꽃 인형",
     "pokemonName": "venusaur",
     "productPrice": 44000,
     "productSize": "XL",
@@ -609,7 +609,7 @@
   },
   {
     "productId": 77,
-    "productName": "비크티니",
+    "productName": "비크티니 인형",
     "pokemonName": "victini",
     "productPrice": 44000,
     "productSize": "S",
@@ -617,7 +617,7 @@
   },
   {
     "productId": 78,
-    "productName": "마자용",
+    "productName": "마자용 인형",
     "pokemonName": "wobbuffet",
     "productPrice": 44000,
     "productSize": "L",
@@ -625,7 +625,7 @@
   },
   {
     "productId": 79,
-    "productName": "맘박쥐",
+    "productName": "맘박쥐 인형",
     "pokemonName": "woobat",
     "productPrice": 13000,
     "productSize": "S",
@@ -633,7 +633,7 @@
   },
   {
     "productId": 80,
-    "productName": "멍파치",
+    "productName": "멍파치 인형",
     "pokemonName": "yamper",
     "productPrice": 17000,
     "productSize": "L",
@@ -641,7 +641,7 @@
   },
   {
     "productId": 81,
-    "productName": "제라오라",
+    "productName": "제라오라 인형",
     "pokemonName": "zeraora",
     "productPrice": 11000,
     "productSize": "L",
@@ -649,7 +649,7 @@
   },
   {
     "productId": 82,
-    "productName": "조로아크",
+    "productName": "조로아크 인형",
     "pokemonName": "zoroark",
     "productPrice": 44000,
     "productSize": "L",

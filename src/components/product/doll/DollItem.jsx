@@ -34,7 +34,7 @@ const DollItem = ({ product }) => {
           }
         ></div>
         <div>
-          <div>{productName} 인형</div>
+          <div>{productName}</div>
           <div className="starRating_box">
             <StarRating />
           </div>
