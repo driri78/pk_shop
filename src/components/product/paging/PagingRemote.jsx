@@ -1,12 +1,10 @@
 import React, { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
-import style from "../../../../assets/style/product/doll/Paging.module.css";
+import style from "../../../assets/style/product/doll/Paging.module.css";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
-import { useProduct } from "../../../../contexts/ProductContext";
-import { createURL } from "../../../../creatURL/createURL";
+import { createURL } from "../../../customFcn/createURL";
 
-const PagingRemote = ({ children, pageJson }) => {
-  const { searchParams } = useProduct();
+const PagingRemote = ({ children, pageJson, searchParams }) => {
   const navigate = useNavigate();
   return (
     <Fragment>

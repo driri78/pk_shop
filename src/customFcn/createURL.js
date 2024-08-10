@@ -41,7 +41,7 @@ function createURL(search, page, block, order) {
   }
 
   const { q, nowOrder, nowPage, nowBlock } = urlObj;
-  const result = `/product/doll?${q}${nowOrder}${nowPage}${nowBlock}`;
+  const result = `${window.location.pathname}?${q}${nowOrder}${nowPage}${nowBlock}`;
   return result.replace("&", "");
 }
 

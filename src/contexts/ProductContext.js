@@ -71,51 +71,6 @@ const ProductProvider = ({ children }) => {
     // }
   }, [searchParams]);
 
-  const pageJson = {
-    totalProduct: products.length,
-    pagePerProduct: 20,
-    lastPage: Math.ceil(products.length / 20),
-    blockPerPage: 2,
-    lastBlock: Math.floor(Math.ceil(products.length / 20) / 2),
-  };
-
-  const viewProductsInit = () => {
-    let arr = [];
-    for (let i = 0; i < pageJson.pagePerProduct; i++) {
-      if (
-        pageJson.pagePerProduct * searchParams.get("nowPage") + i >=
-        products.length
-      ) {
-        break;
-      }
-      let index = pageJson.pagePerProduct * searchParams.get("nowPage") + i;
-      arr.push(products[index]);
-    }
-    return arr;
-  };
-
-  const [viewProducts, SetViewProducts] = useState(viewProductsInit);
-  // lastPage: Math.ceil(products.length / pagePerProduct)
-  // lastBlock: Math.floor(lastPage / blockPerPage)
-
-  useEffect(() => {
-    const viewProductsHandle = () => {
-      let arr = [];
-      for (let i = 0; i < pageJson.pagePerProduct; i++) {
-        if (
-          pageJson.pagePerProduct * searchParams.get("nowPage") + i >=
-          products.length
-        ) {
-          break;
-        }
-        let index = pageJson.pagePerProduct * searchParams.get("nowPage") + i;
-        arr.push(products[index]);
-      }
-      SetViewProducts(arr);
-    };
-    viewProductsHandle();
-  }, [searchParams, pageJson.pagePerProduct, products]);
-
   return (
     <productContext.Provider
       value={{
@@ -123,8 +78,6 @@ const ProductProvider = ({ children }) => {
         setProducts,
         pendding,
         searchParams,
-        pageJson,
-        viewProducts,
       }}
     >
       {children}

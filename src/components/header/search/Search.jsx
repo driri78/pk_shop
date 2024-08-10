@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import SearchBtn from "./SearchBtn";
 import { useNavigate } from "react-router-dom";
-import { createURL } from "../../../creatURL/createURL";
+import { createURL } from "../../../customFcn/createURL";
 
 const Search = () => {
   const [focus, setFocus] = useState(false);

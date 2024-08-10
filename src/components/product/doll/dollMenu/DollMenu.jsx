@@ -1,7 +1,7 @@
 import React from "react";
 import { useProduct } from "../../../../contexts/ProductContext";
 import { useNavigate } from "react-router-dom";
-import { createURL } from "../../../../creatURL/createURL";
+import { createURL } from "../../../../customFcn/createURL";
 const DollMenu = () => {
   const { products, searchParams } = useProduct();
   const navigate = useNavigate();

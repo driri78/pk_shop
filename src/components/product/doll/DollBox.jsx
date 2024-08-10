@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from "react";
 import DollItem from "./DollItem";
 import DollMenu from "./dollMenu/DollMenu";
-import Paging from "./paging/Paging";
 import { useProduct } from "../../../contexts/ProductContext";
+import Paging from "../paging/Paging";
+import { dollPageJson, viewItem } from "../../../customFcn/paging";
 
 const DollBox = () => {
-  const { pendding, viewProducts } = useProduct();
+  const { pendding, products, searchParams } = useProduct();
 
+  const [viewProducts, SetViewProducts] = useState(
+    viewItem(products, dollPageJson(products))
+  );
+  useEffect(() => {
+    SetViewProducts(viewItem(products, dollPageJson(products)));
+  }, [searchParams]);
   return (
     <div className="product_content">
       <DollMenu />
@@ -23,7 +30,7 @@ const DollBox = () => {
           <div>로딩중.....</div>
         )}
       </div>
-      <Paging />
+      <Paging pageJson={dollPageJson(products)} />
     </div>
   );
 };

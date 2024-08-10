@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import style from "../../../../assets/style/product/doll/Paging.module.css";
-import { useProduct } from "../../../../contexts/ProductContext";
+import style from "../../../assets/style/product/doll/Paging.module.css";
 import PagingNum from "./PagingNum";
 import PagingRemote from "./PagingRemote";
-const Paging = () => {
+import { useSearchParams } from "react-router-dom";
+const Paging = ({ pageJson }) => {
   // const [pageData, setPageData] = useState(pageJson);
   const [pageNum, setPageNum] = useState([]);
-  const { searchParams, pageJson } = useProduct();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   // spring boot
   // useEffect(() => {
@@ -39,13 +39,13 @@ const Paging = () => {
       }
     };
     pagingHandle();
-  }, [searchParams, pageJson.lastBlock, pageJson.lastPage]);
+  }, [searchParams, pageJson]);
 
   return (
     <div className={style.paging_box}>
       {pageJson && (
-        <PagingRemote pageJson={pageJson}>
-          <PagingNum pageNum={pageNum} />
+        <PagingRemote pageJson={pageJson} searchParams={searchParams}>
+          <PagingNum pageNum={pageNum} searchParams={searchParams} />
         </PagingRemote>
       )}
     </div>

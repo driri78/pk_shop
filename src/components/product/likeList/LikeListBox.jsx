@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
 import LikeListItem from "./LikeListItem";
 import "../../../assets/style/product/LikeList.css";
+import Paging from "../paging/Paging";
+import { likeListPageJson, viewItem } from "../../../customFcn/paging";
+import { useSearchParams } from "react-router-dom";
 const LikeListBox = () => {
   const [likeList, setLikeList] = useState([]);
-  console.log(likeList);
+  const [searchParams, setSearchParams] = useSearchParams();
   useEffect(() => {
     if (window.localStorage.getItem("LikeList")) {
       const list = JSON.parse(window.localStorage.getItem("LikeList"));
-      setLikeList(list);
+      setLikeList(viewItem(list, likeListPageJson(list)));
     }
-  }, []);
+  }, [searchParams]);
   return (
     <div>
       <div>관심 상품</div>
@@ -35,6 +38,11 @@ const LikeListBox = () => {
           ))}
         </tbody>
       </table>
+      <Paging
+        pageJson={likeListPageJson(
+          JSON.parse(window.localStorage.getItem("LikeList"))
+        )}
+      />
       <div>
         <button>선택 상품 삭제</button>
       </div>

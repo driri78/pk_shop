@@ -1,10 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useProduct } from "../../../../contexts/ProductContext";
-import { createURL } from "../../../../creatURL/createURL";
+import { createURL } from "../../../customFcn/createURL";
 
-const PagingNumItem = ({ num }) => {
-  const { searchParams } = useProduct();
+const PagingNumItem = ({ num, searchParams }) => {
   const navigate = useNavigate();
 
   return (
