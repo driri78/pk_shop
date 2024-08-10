@@ -1,4 +1,10 @@
-function createURL(search, page, block, order) {
+function createURL(
+  search,
+  page,
+  block,
+  order,
+  path = window.location.pathname
+) {
   const searchParams = new URLSearchParams(window.location.search);
   let urlObj = {
     q: "",
@@ -41,7 +47,7 @@ function createURL(search, page, block, order) {
   }
 
   const { q, nowOrder, nowPage, nowBlock } = urlObj;
-  const result = `${window.location.pathname}?${q}${nowOrder}${nowPage}${nowBlock}`;
+  const result = `${path}?${q}${nowOrder}${nowPage}${nowBlock}`;
   return result.replace("&", "");
 }
 

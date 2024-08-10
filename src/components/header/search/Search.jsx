@@ -9,13 +9,14 @@ const Search = () => {
   const [searchVal, setSearchVal] = useState("");
   const inputRef = useRef();
   const navigate = useNavigate();
+
   return (
     <form
       className="product_search_box"
       onSubmit={(e) => {
         e.preventDefault();
         if (searchVal.length) {
-          navigate(createURL(searchVal, 0, 0));
+          navigate(createURL(searchVal, 0, 0, undefined, "/product/doll"));
         } else {
           alert("검색어를 입력하세요");
           inputRef.current.focus();

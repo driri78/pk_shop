@@ -15,7 +15,6 @@ const PagingNumItem = ({ num, searchParams }) => {
       onClick={(e) => {
         e.preventDefault();
         if (num === +searchParams.get("nowPage")) {
-          console.log("같음");
           return;
         }
         navigate(createURL(undefined, num));

@@ -1,9 +1,8 @@
 import React from "react";
-import { useProduct } from "../../../../contexts/ProductContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { createURL } from "../../../../customFcn/createURL";
-const DollMenu = () => {
-  const { products, searchParams } = useProduct();
+const DollMenu = ({ products }) => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   return (
     <div className="doll_menu">

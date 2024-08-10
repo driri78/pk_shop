@@ -1,24 +1,28 @@
 import React, { useEffect, useState } from "react";
 import DollItem from "./DollItem";
 import DollMenu from "./dollMenu/DollMenu";
-import { useProduct } from "../../../contexts/ProductContext";
 import Paging from "../paging/Paging";
 import { dollPageJson, viewItem } from "../../../customFcn/paging";
-
+import { getDollData } from "../../../customFcn/getDollData";
+import dollData from "../../../api/dollData.json";
+import { useSearchParams } from "react-router-dom";
 const DollBox = () => {
-  const { pendding, products, searchParams } = useProduct();
-
+  const [pending, setPending] = useState(true);
+  const [searchParams, setSearchParams] = useSearchParams();
   const [viewProducts, SetViewProducts] = useState(
-    viewItem(products, dollPageJson(products))
+    viewItem(getDollData(dollData), dollPageJson(getDollData(dollData)))
   );
+
   useEffect(() => {
+    const products = getDollData(dollData);
     SetViewProducts(viewItem(products, dollPageJson(products)));
   }, [searchParams]);
+
   return (
     <div className="product_content">
-      <DollMenu />
+      <DollMenu products={getDollData(dollData)} />
       <div className="doll_box">
-        {pendding ? (
+        {pending ? (
           viewProducts.length ? (
             viewProducts.map((item) => (
               <DollItem key={item.pokemonName} product={item} />
@@ -30,7 +34,7 @@ const DollBox = () => {
           <div>로딩중.....</div>
         )}
       </div>
-      <Paging pageJson={dollPageJson(products)} />
+      <Paging pageJson={dollPageJson(getDollData(dollData))} />
     </div>
   );
 };
