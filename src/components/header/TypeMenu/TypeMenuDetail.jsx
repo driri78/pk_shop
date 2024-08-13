@@ -33,7 +33,6 @@ const MenuDetail = ({ type, typeArr, dispatch }) => {
             return;
           }
           checkTypeArr();
-          console.log(typeArr);
           setCheck(!check);
         }}
       />

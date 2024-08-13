@@ -21,3 +21,19 @@ code {
 body {
   font-family: "Pretendard-Regular", sans-serif;
 }
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(/public/images/checkBox/check_off_small.png);
+  background-size: cover;
+
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label {
+  background: url(/public/images/checkBox/check_on_small.png);
+  background-size: cover;
+}

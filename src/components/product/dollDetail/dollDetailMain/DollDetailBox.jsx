@@ -69,14 +69,14 @@ const DollDetailBox = () => {
                           dispatch({ type: "input", payload: 1 });
                           return;
                         }
-                        dispatch({ type: "input", payload: +e.target.value });
-                      }}
-                      onBlur={(e) => {
-                        if (e.target.value > productCount) {
+                        if (+e.target.value > productCount) {
                           alert("남아있는 재고가 없습니다....");
                           dispatch({ type: "input", payload: 1 });
                           return;
                         }
+                        dispatch({ type: "input", payload: +e.target.value });
+                      }}
+                      onBlur={(e) => {
                         if (!+e.target.value) {
                           dispatch({ type: "input", payload: 1 });
                         }
@@ -85,7 +85,7 @@ const DollDetailBox = () => {
                   </div>
                   <motion.div
                     whileTap={{
-                      scale: 1.2,
+                      scale: 1.1,
                     }}
                     onClick={() => {
                       if (count === productCount) {

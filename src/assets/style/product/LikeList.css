@@ -1,6 +1,83 @@
+.likeList_box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 100px;
+}
+.likeList_box .title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.likeList_box .count {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #aaa;
+  font-size: 16px;
+}
+
 table {
   width: 100%;
+  border-collapse: collapse;
 }
+table input {
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+}
+th {
+  height: 50px;
+  background-color: #eee;
+}
+td {
+  height: 70px;
+}
+th,
+td {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+table td:nth-of-type(2) {
+  text-align: left;
+}
+table td:nth-of-type(2) > div {
+  display: flex;
+  gap: 24px;
+}
+
 table img {
-  width: 100px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+table img,
+table span {
+  cursor: pointer;
+}
+table span {
+  font-size: 18px;
+}
+.likeList_box .btn {
+  padding: 20px 0px;
+  display: flex;
+  gap: 14px;
+}
+.likeList_box .btn button {
+  line-height: 14px;
+  padding: 8px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  outline: none;
+  cursor: pointer;
+}
+.likeList_box .delete {
+  color: #555;
+  border: 1px solid #555;
+  background-color: transparent;
+}
+.likeList_box .add_basket {
+  color: #fff;
+  border: none;
+  background-color: #555;
 }

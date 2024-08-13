@@ -9,10 +9,10 @@ const ShortMenu = () => {
   const { pathname } = useLocation();
   const pathArr = pathname.split("/");
   useEffect(() => {
-    if (pathArr[1] !== "product") {
-      SetIsroduct(false);
-    } else {
+    if (pathArr[1] === "product" && pathArr[2] === "doll") {
       SetIsroduct(true);
+    } else {
+      SetIsroduct(false);
     }
   }, [pathArr, SetIsroduct]);
 
