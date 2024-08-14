@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import SubImageItem from "./SubImageItem";
+import DollHeart from "../../doll/DollHeart";
 
-const DollDetailImageBox = ({ pokemonName }) => {
+const DollDetailImageBox = ({ product }) => {
+  const { pokemonName } = product;
   const image = [
     {
       id: 1,
@@ -16,6 +18,7 @@ const DollDetailImageBox = ({ pokemonName }) => {
   const [imgPath, setImgPath] = useState(image[0].path);
   return (
     <div className="img_box">
+      <DollHeart product={product} />
       <div className="sub_box">
         {image.map((image) => (
           <SubImageItem

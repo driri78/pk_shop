@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useLikeList } from "../../../contexts/LikeListContext";
 
-const LikeListItem = ({ product, allCheck }) => {
-  const { ko, en, price } = product;
+const LikeListItem = ({ product }) => {
+  const { id, ko, en, price } = product;
+  const { checkListHandle } = useLikeList();
   const [check, setCheck] = useState(false);
   const navigate = useNavigate();
-  useEffect(() => {
-    setCheck(allCheck);
-  }, [allCheck]);
+
+  useEffect(() => {}, []);
+
   return (
     <tr>
       <td>
@@ -15,8 +17,9 @@ const LikeListItem = ({ product, allCheck }) => {
           type="checkbox"
           id={`like_${en}`}
           checked={check}
-          onChange={() => {
+          onChange={(e) => {
             setCheck(!check);
+            checkListHandle(!check, id);
           }}
         />
         <label htmlFor={`like_${en}`}></label>

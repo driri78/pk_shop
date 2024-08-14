@@ -1,6 +1,5 @@
 .dollDetail_container {
   width: 80%;
-  max-width: 1000px;
   margin: 50px auto;
 }
 .dollDetail_box {
@@ -11,6 +10,22 @@
 .dollDetail_box .img_box,
 .dollDetail_box .info_box {
   width: 40%;
+}
+.img_box {
+  position: relative;
+}
+.img_box .heart {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.img_box .heart svg {
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
 }
 .img_box .sub_box,
 .img_box .main {

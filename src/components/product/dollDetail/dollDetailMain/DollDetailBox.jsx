@@ -26,16 +26,15 @@ const reducer = (state, action) => {
 };
 
 const DollDetailBox = () => {
-  const { doll, isPendding } = useProductDetail();
-  const { productName, pokemonName, productPrice, productSize, productCount } =
-    doll;
+  const { product, isPendding } = useProductDetail();
+  const { productName, productPrice, productSize, productCount } = product;
   const [count, dispatch] = useReducer(reducer, 1);
   return (
     <Fragment>
       {isPendding ? (
         <div className="dollDetail_container">
           <div className="dollDetail_box">
-            {productName && <DollDetailImageBox pokemonName={pokemonName} />}
+            {productName && <DollDetailImageBox product={product} />}
             <div className="info_box">
               <div>
                 <StarRating />

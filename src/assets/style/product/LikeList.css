@@ -1,7 +1,7 @@
 .likeList_box {
   width: 80%;
   margin: 0 auto;
-  padding: 40px 100px;
+  padding: 40px 70px;
 }
 .likeList_box .title {
   font-size: 28px;
@@ -23,6 +23,7 @@ table input {
   height: 16px;
   border-radius: 0;
 }
+
 th {
   height: 50px;
   background-color: #eee;
@@ -56,12 +57,12 @@ table span {
 table span {
   font-size: 18px;
 }
-.likeList_box .btn {
+.likeList_box .likeList_btn {
   padding: 20px 0px;
   display: flex;
   gap: 14px;
 }
-.likeList_box .btn button {
+.likeList_btn button {
   line-height: 14px;
   padding: 8px;
 
@@ -71,12 +72,12 @@ table span {
   outline: none;
   cursor: pointer;
 }
-.likeList_box .delete {
+.likeList_btn .delete {
   color: #555;
   border: 1px solid #555;
   background-color: transparent;
 }
-.likeList_box .add_basket {
+.likeList_btn .add_basket {
   color: #fff;
   border: none;
   background-color: #555;

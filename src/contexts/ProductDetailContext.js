@@ -1,10 +1,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import dollData from "../api/dollData.json";
+
 const productDetailContext = createContext(null);
 
 const ProductDetailProvider = ({ children }) => {
-  const [doll, setDoll] = useState({});
+  const [product, setProduct] = useState({});
   const [isPendding, setIsPendding] = useState(true);
   const params = useParams();
 
@@ -27,12 +28,14 @@ const ProductDetailProvider = ({ children }) => {
     // };
 
     const getDoll = () => {
-      setDoll(dollData.find((doll) => doll.pokemonName === params.pokemonName));
+      setProduct(
+        dollData.find((doll) => doll.pokemonName === params.pokemonName)
+      );
     };
     getDoll();
   }, [params]);
   return (
-    <productDetailContext.Provider value={{ doll, isPendding }}>
+    <productDetailContext.Provider value={{ product, isPendding }}>
       {children}
     </productDetailContext.Provider>
   );

@@ -1,29 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef } from "react";
 import LikeListItem from "./LikeListItem";
 import "../../../assets/style/product/LikeList.css";
 import Paging from "../paging/Paging";
-import { likeListPageJson, viewItem } from "../../../customFcn/paging";
-import { useSearchParams } from "react-router-dom";
+import { likeListPageJson } from "../../../customFcn/paging";
+import LikeListBtn from "./LikeListBtn";
+import { useLikeList } from "../../../contexts/LikeListContext";
 const LikeListBox = () => {
-  const [likeList, setLikeList] = useState([]);
-  const [isList, setIsList] = useState(false);
-  const [allCheck, setAllCheck] = useState(false);
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  useEffect(() => {
-    if (window.localStorage.getItem("LikeList")) {
-      const list = JSON.parse(window.localStorage.getItem("LikeList"));
-      setLikeList(viewItem(list, likeListPageJson(list)));
-      setIsList(true);
-      return;
-    }
-    setIsList(false);
-  }, [searchParams]);
-
-  useEffect(() => {
-    setAllCheck(false);
-  }, [searchParams.get("nowPage")]);
-
+  const { likeList, isList } = useLikeList();
+  const allRef = useRef();
   return (
     <div className="likeList_box">
       <div className="title">관심 상품</div>
@@ -43,14 +27,7 @@ const LikeListBox = () => {
         <thead>
           <tr>
             <th>
-              <input
-                type="checkbox"
-                id="all"
-                checked={allCheck}
-                onChange={() => {
-                  setAllCheck(!allCheck);
-                }}
-              />
+              <input type="checkbox" id="all" ref={allRef} />
               <label htmlFor="all"></label>
             </th>
             <th>상품명</th>
@@ -59,18 +36,11 @@ const LikeListBox = () => {
         </thead>
         <tbody>
           {likeList.map((product) => (
-            <LikeListItem
-              key={product.id}
-              product={product}
-              allCheck={allCheck}
-            />
+            <LikeListItem key={product.id} product={product} />
           ))}
         </tbody>
       </table>
-      <div className="btn">
-        <button className="delete">선택 상품 삭제</button>
-        <button className="add_basket">장바구니 담기</button>
-      </div>
+      <LikeListBtn />
       {isList && (
         <Paging
           pageJson={likeListPageJson(

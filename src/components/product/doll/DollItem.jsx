@@ -4,8 +4,7 @@ import StarRating from "../starRating/StarRating";
 import { useNavigate } from "react-router-dom";
 
 const DollItem = ({ product }) => {
-  const { productName, pokemonName, productPrice, productSize, productCount } =
-    product;
+  const { productName, pokemonName, productPrice } = product;
   const [hover, setHover] = useState(true);
   const navigate = useNavigate();
   return (
