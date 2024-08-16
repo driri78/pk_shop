@@ -1,7 +1,8 @@
 import React from "react";
+import BasketBox from "./BasketBox";
 
 const Main = () => {
-  return <div>BasketPage</div>;
+  return <BasketBox />;
 };
 
 export default Main;

@@ -50,7 +50,7 @@ const DollDetailBox = () => {
                 <div className="totalCount">
                   <motion.div
                     whileTap={{
-                      scale: 1.2,
+                      scale: 1.1,
                     }}
                     onClick={() => {
                       dispatch({ type: "sub", payload: count });

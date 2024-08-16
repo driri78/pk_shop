@@ -1,7 +1,7 @@
 .likeList_box {
   width: 80%;
   margin: 0 auto;
-  padding: 40px 70px;
+  padding: 40px;
 }
 .likeList_box .title {
   font-size: 28px;
@@ -14,47 +14,47 @@
   font-size: 16px;
 }
 
-table {
+.likeList_box table {
   width: 100%;
   border-collapse: collapse;
 }
-table input {
+.likeList_box table input {
   width: 16px;
   height: 16px;
   border-radius: 0;
 }
 
-th {
+.likeList_box th {
   height: 50px;
   background-color: #eee;
 }
-td {
+.likeList_box td {
   height: 70px;
 }
-th,
-td {
+.likeList_box th,
+.likeList_box td {
   text-align: center;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-table td:nth-of-type(2) {
+.likeList_box table td:nth-of-type(2) {
   text-align: left;
 }
-table td:nth-of-type(2) > div {
+.likeList_box table td:nth-of-type(2) > div {
   display: flex;
   gap: 24px;
 }
 
-table img {
+.likeList_box table img {
   width: 50px;
   height: 50px;
   border: 1px solid #ccc;
 }
-table img,
-table span {
+.likeList_box table img,
+.likeList_box table span {
   cursor: pointer;
 }
-table span {
+.likeList_box table span {
   font-size: 18px;
 }
 .likeList_box .likeList_btn {

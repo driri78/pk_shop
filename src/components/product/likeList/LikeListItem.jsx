@@ -4,11 +4,17 @@ import { useLikeList } from "../../../contexts/LikeListContext";
 
 const LikeListItem = ({ product }) => {
   const { id, ko, en, price } = product;
-  const { checkListHandle } = useLikeList();
-  const [check, setCheck] = useState(false);
+  const { checkList, checkListHandle } = useLikeList();
+  const [checked, setChecked] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (checkList.find((item) => item.id === id)) {
+      setChecked(true);
+    } else {
+      setChecked(false);
+    }
+  }, [checkList, id]);
 
   return (
     <tr>
@@ -16,10 +22,9 @@ const LikeListItem = ({ product }) => {
         <input
           type="checkbox"
           id={`like_${en}`}
-          checked={check}
+          checked={checked}
           onChange={(e) => {
-            setCheck(!check);
-            checkListHandle(!check, id);
+            checkListHandle(e.target.checked, product);
           }}
         />
         <label htmlFor={`like_${en}`}></label>

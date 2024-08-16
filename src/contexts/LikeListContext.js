@@ -12,30 +12,39 @@ const LikeListProvider = ({ children }) => {
 
   const [checkList, setCheckList] = useState([]);
 
-  const checkListHandle = (check, id) => {
+  const checkListHandle = (check, product) => {
+    let newCheckList = [];
+    const { id } = product;
     if (check) {
-      setCheckList([...checkList, { id }]);
+      newCheckList = [...checkList, product];
     } else {
-      const index = checkList.findIndex((item) => item.id === id);
-      checkList.splice(index, 1);
-      setCheckList(checkList);
+      newCheckList = checkList.filter((item) => item.id !== id);
     }
+    setCheckList(newCheckList);
   };
 
+  const allCheckListHandle = (check) => {
+    let newCheckList = [];
+    if (check) {
+      newCheckList = likeList;
+    }
+    setCheckList(newCheckList);
+  };
   const reloadLikeList = () => {
     setCheckList([]);
     if (window.localStorage.getItem("LikeList")) {
       const list = JSON.parse(window.localStorage.getItem("LikeList"));
-      setLikeList(viewItem(list, likeListPageJson(list)));
-      setIsList(true);
-    } else {
-      setIsList(false);
+      if (list.length) {
+        setLikeList(viewItem(list, likeListPageJson(list)));
+        setIsList(true);
+        return;
+      }
     }
+    setIsList(false);
   };
-
   useEffect(() => {
-    setCheckList([]);
     reloadLikeList();
+    setCheckList([]);
   }, [searchParams]);
   return (
     <LikeListContext.Provider
@@ -45,6 +54,7 @@ const LikeListProvider = ({ children }) => {
         checkList,
         reloadLikeList,
         checkListHandle,
+        allCheckListHandle,
       }}
     >
       {children}

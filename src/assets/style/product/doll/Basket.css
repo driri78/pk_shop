@@ -1,0 +1,17 @@
+.basket_box {
+  width: 80%;
+}
+.basket_box table {
+  width: 100%;
+}
+.basket_box th,
+.basket_box td {
+  text-align: center;
+}
+.basket_box table td:nth-of-type(2) {
+  text-align: left;
+}
+.basket_box table td:nth-of-type(2) > div {
+  display: flex;
+  gap: 24px;
+}
