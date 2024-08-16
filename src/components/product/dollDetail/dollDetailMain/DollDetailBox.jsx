@@ -39,7 +39,7 @@ const DollDetailBox = () => {
               <div>
                 <StarRating />
               </div>
-              <div className="name">{productName} 인형</div>
+              <div className="name">{productName}</div>
               <div className="price">
                 {productPrice?.toLocaleString("ko-KR")}원
               </div>

@@ -51,20 +51,4 @@ function createURL(
   return result.replace("&", "");
 }
 
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "pageNum":
-      return createURL(undefined, action.payload, undefined, undefined);
-    case "pageRemote":
-      return createURL(undefined, undefined, action.payload, undefined);
-    case "search":
-      return createURL(action.payload, 0, 0, undefined);
-    case "order":
-      return createURL(undefined, undefined, undefined, action.payload);
-    case "basic":
-      return action.payload;
-    default:
-      return state;
-  }
-};
-export { createURL, reducer };
+export { createURL };

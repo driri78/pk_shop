@@ -1,22 +1,24 @@
 import React from "react";
-import "../../../assets/style/product/doll/Basket.css";
+import "../../../assets/style/product/Basket.css";
 import BasketItem from "./BasketItem";
 import BasketResult from "./BasketResult";
 import BasketBtn from "./BasketBtn";
+import { useBasket } from "../../../contexts/BasketContext";
 
 const BasketBox = () => {
+  const { basketList } = useBasket();
   return (
     <div className="basket_box">
       <div>장바구니</div>
       <table>
         <colgroup>
-          <col />
-          <col width="33%" />
-          <col />
-          <col />
-          <col />
-          <col />
-          <col />
+          <col width="10%" />
+          <col width="35%" />
+          <col width="10%" />
+          <col width="10%" />
+          <col width="10%" />
+          <col width="10%" />
+          <col width="10%" />
         </colgroup>
         <thead>
           <tr>
@@ -33,11 +35,9 @@ const BasketBox = () => {
           </tr>
         </thead>
         <tbody>
-          <BasketItem />
-          <BasketItem />
-          <BasketItem />
-          <BasketItem />
-          <BasketItem />
+          {basketList.map((item) => (
+            <BasketItem />
+          ))}
         </tbody>
       </table>
       <div>

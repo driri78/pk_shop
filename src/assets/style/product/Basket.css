@@ -1,9 +1,18 @@
 .basket_box {
   width: 80%;
+  padding: 40px;
+  margin: 0 auto;
 }
 .basket_box table {
   width: 100%;
 }
+.basket_box th {
+  height: 70px;
+}
+.basket_box td {
+  height: 120px;
+}
+
 .basket_box th,
 .basket_box td {
   text-align: center;
